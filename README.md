@@ -41,6 +41,13 @@ Typical fields include:
 - Anonymized principal components  
 - Fraud label (`Class`)  
 
+Download the dataset from:
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+After downloading, place the file in:
+
+data/creditcard.csv
+
 > **Note:** The dataset is highly imbalanced, which makes it a strong candidate for anomaly detection techniques.
 
 ---
