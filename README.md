@@ -30,7 +30,29 @@ The goal of this project is to build a system that learns what **“normal” be
 
 ---
 
-## Dataset
+## How to Run
+
+# 1. Clone the repository
+
+```bash
+git clone https://github.com/amoheric/ai-anomaly-detection-system.git
+cd ai-anomaly-detection-system
+
+Install dependencies
+
+pip install -r requirements.txt
+
+Download the dataset from Kaggle and place it in:
+
+data/creditcard.csv
+
+Run the anomaly detection pipeline
+
+python run_detection.py
+
+```
+---
+## Dataset Setup
 
 This project uses the **Credit Card Fraud Detection dataset**, commonly used for anomaly detection and fraud analysis research.
 
@@ -44,10 +66,11 @@ Typical fields include:
 Download the dataset from:
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
-After downloading, place the file in:
+After downloading, place the CSV file here:
 
+```text
 data/creditcard.csv
-
+```
 > **Note:** The dataset is highly imbalanced, which makes it a strong candidate for anomaly detection techniques.
 
 ---
@@ -94,7 +117,7 @@ Visualization & Analysis
 ai-anomaly-detection-system/
 │
 ├── data/
-│ └── creditcard.csv
+│ └── creditcard.csv (Kaggle)
 │
 ├── notebooks/
 │ └── anomaly_detection.ipynb
@@ -102,6 +125,7 @@ ai-anomaly-detection-system/
 ├── src/
 │ └── anomaly_model.py
 │
+├── run_detection.py
 ├── requirements.txt
 ├── README.md
 └── LICENSE
@@ -154,10 +178,12 @@ Planned enhancements include:
 
 - Hyperparameter tuning  
 - Additional anomaly detection algorithms  
-- Interactive dashboard with **Streamlit**  
+- Interactive dashboard with **Streamlit** for anomaly exploration 
 - **FastAPI** model endpoint for real-time inference  
-- Real-time transaction simulation  
-- Model monitoring and alerting  
+- Real-time transaction simulation
+- Add evaluation metrics summary to the command-line runner
+- Add synthetic sample data for easier demo setup
+- Model monitoring, drift detection, and alerting  
 
 ---
 
