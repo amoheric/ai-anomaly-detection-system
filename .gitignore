@@ -208,3 +208,5 @@ __marimo__/
 
 # Project datasets
 data/
+.ipynb_checkpoints/
+__pycache__/
